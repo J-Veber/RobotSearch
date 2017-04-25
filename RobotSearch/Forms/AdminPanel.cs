@@ -12,6 +12,8 @@ namespace RobotSearch.Forms
             _userLogin = userLogin;
             MyForm = inpForm;
             InitializeComponent();
+            tb_AdminName.Text = _userLogin;
+            tb_AdminName.Enabled = false;
         }
 
         private void AdminPanel_Load(object sender, EventArgs e)
@@ -27,7 +29,7 @@ namespace RobotSearch.Forms
 
         private void button_createNewUsr_adm_Click(object sender, EventArgs e)
         {
-            var createUsrForm = new Registration(this);
+            var createUsrForm = new SpRegistration(this);
             this.Enabled = false;
             createUsrForm.Show();
         }
