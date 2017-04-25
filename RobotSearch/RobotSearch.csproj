@@ -92,6 +92,12 @@
     <Compile Include="Forms\Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SpRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SpRegistration.Designer.cs">
+      <DependentUpon>SpRegistration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\SearchRobot.cs">
@@ -112,6 +118,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>robot_search_dbDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="robot_search_dbDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>robot_search_dbDataSet11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="Forms\AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
@@ -130,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SearchRobot.resx">
       <DependentUpon>SearchRobot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpRegistration.resx">
+      <DependentUpon>SpRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserPanel.resx">
       <DependentUpon>UserPanel.cs</DependentUpon>
@@ -162,6 +176,17 @@
     </None>
     <None Include="robot_search_dbDataSet.xss">
       <DependentUpon>robot_search_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="robot_search_dbDataSet11.xsc">
+      <DependentUpon>robot_search_dbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="robot_search_dbDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>robot_search_dbDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="robot_search_dbDataSet11.xss">
+      <DependentUpon>robot_search_dbDataSet11.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
